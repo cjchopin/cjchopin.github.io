@@ -221,7 +221,7 @@ input {
 
 
 button:hover {
-animation: pulse 2s;
+animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -331,7 +331,6 @@ animation: pulse 2s;
 	display: flex;
   margin-top: 15%;
   background-color: rgba(0,0,0, 0.4);
-  border-radius: 50%;
   position: absolute;
 }
 
