@@ -1,0 +1,406 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  background-image: url("/Users/christianjuschin/Desktop/newportfolio/pictures/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Apple Chancery", cursive;
+  color: #92C4DC;
+  margin-bottom: 5px;
+}
+
+p {
+	text-align: center;
+	font-size: 18px;
+  font-family: "Courier New", monospace;
+  color: #92C4DC;
+  margin-top: 0;
+}
+
+nav {
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  color: #92C4DC;
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: white;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.contactbutton {
+  color: white;
+  background-color: #777;
+  border-radius: 20px;
+  border-color: white;
+  min-width: 48px;
+  min-height: 48px;
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 60px;
+}
+
+article {
+  overflow: auto;
+  font-size: 0.5em;
+  font-family: "Times New Roman", Times, serif;
+  alignment-baseline: central;
+  font-family: 'Questrial', sans-serif;
+}
+
+span {
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+}
+
+ul {
+  margin: 8px;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  overflow: auto;
+}
+
+.bg-modal{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: none;
+}
+
+
+.modal-content{
+  z-index: 3;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  overflow: auto;
+  font-family: "source sans pro";
+}
+
+
+.me {
+  float: right;
+  padding: 20px;
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  transform: rotate(45deg);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close2 {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  transform: rotate(45deg);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close3 {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  transform: rotate(45deg);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.modal-content2{
+  z-index: 3;
+  background-color: white;
+  position: relative;
+  overflow: auto;
+  font-family: "source sans pro";
+  padding: 25px;
+  height: 80vh;
+}
+
+.project1content {
+  align-items: center;
+  text-align: center;
+}
+
+.project1links {
+  align-items: center;
+  text-align: center;
+}
+
+.project2content {
+  align-items: center;
+  text-align: center;
+}
+
+.project2links {
+  align-items: center;
+  text-align: center;
+}
+
+.project3content {
+  align-items: center;
+  text-align: center;
+}
+
+.project3links {
+  align-items: center;
+  text-align: center;
+}
+
+.project4content {
+  align-items: center;
+  text-align: center;
+}
+
+.project4links {
+  align-items: center;
+  text-align: center;
+}
+
+.project {
+  font-size: 0.5em;
+}
+
+.modal-content3{
+  z-index: 3;
+  background-color: white;
+  position: relative;
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  height: 80vh;
+  align-items: center;
+  text-align: center;
+}
+
+.message {
+  height: 130px;
+  width: 100%;
+}
+
+
+button:hover {
+animation: pulse 2s;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 white;
+    box-shadow: 0 0 0 0 white;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+
+@media screen and (min-width: 300px) and (min-height: 550px) {
+  article {
+    font-size: 0.8em;
+  }
+
+  .me {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project {
+  font-size: 0.8em;
+}
+}
+
+@media screen and (min-width: 550px) and (min-height: 300px){
+  article {
+    font-size: 0.8em;
+  }
+
+  .me {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project {
+  font-size: 0.8em;
+}
+}
+
+@media screen and (min-width: 720px) and (min-height: 720px) {
+  article {
+    font-size: 1em;
+  }
+
+  .me {
+    width: 200px;
+    height: 200px;
+  }
+
+  .project {
+  font-size: 0.85em;
+}
+}
+
+@media screen and (min-width: 900px) and (min-height: 900px) {
+  article {
+    font-size: 1.5em;
+  }
+
+  .me {
+    width: 300px;
+    height: 300px;
+  }
+
+  .project {
+  font-size: 1.3em;
+}
+
+  .hire {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 600px) {
+  article {
+    font-size: 1.5em;
+  }
+
+  .me {
+    width: 300px;
+    height: 300px;
+  }
+
+  .project {
+  font-size: 1.3em;
+}
+
+  .hire {
+    font-size: 1.5em;
+  }
+}
+
+
+
+
+.row {
+	width: 100%;
+	display: flex;
+  margin-top: 15%;
+  background-color: rgba(0,0,0, 0.4);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.row2 {
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  align-items: center;
+  display: none;
+}
+
+.row3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.row4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
