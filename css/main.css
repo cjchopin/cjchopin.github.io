@@ -328,6 +328,7 @@ animation: pulse 2s infinite;
 
 .row {
 	width: 100%;
+  display: none;
 	display: flex;
   margin-top: 15%;
   background-color: rgba(0,0,0, 0.4);
