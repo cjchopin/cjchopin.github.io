@@ -35,7 +35,7 @@ nav {
   text-align: center;
 }
 
-button {
+.coverbutton {
   color: #92C4DC;
   background-color: transparent;
   border-radius: 20px;
